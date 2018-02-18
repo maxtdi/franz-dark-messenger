@@ -1,0 +1,13 @@
+{
+  "id": "darkmessenger",
+  "name": "Messenger - Dark",
+  "version": "1.0.0",
+  "description": "Facebook Messenger",
+  "main": "index.js",
+  "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
+  "license": "Apache 2",
+  "config": {
+    "serviceURL": "https://messenger.com",
+    "hasNotificationSound": true
+  }
+}
