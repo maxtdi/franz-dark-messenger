@@ -4,13 +4,13 @@ const theme = require('./theme');
 
 
 module.exports = Franz => {
+  Franz.injectCSS(path.join(__dirname, 'darkTheme.css'));
   const getMessages = function getMessages() {
     let count = document.querySelectorAll('._5fx8:not(._569x),._1ht3:not(._569x)').length;
     const messageRequestsElement = document.querySelector('._5nxf');
     if (messageRequestsElement) {
       count += parseInt(messageRequestsElement.innerHTML, 10);
     }
-theme('darkTheme');
     Franz.setBadge(count);
   };
 
